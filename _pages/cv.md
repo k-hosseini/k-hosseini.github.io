@@ -7,6 +7,10 @@ redirect_from:
   - /resume
 ---
 
+paperurl: 'http://academicpages.github.io/files/paper1.pdf'
+
+
+
 {% include base_path %}
 
 Education
