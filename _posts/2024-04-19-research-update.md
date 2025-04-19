@@ -1,9 +1,13 @@
 ---
-layout: post
-title: "Research Update: Economic Sanctions and Voter Behavior"
-date: 2024-04-19 08:00:00 -0700
-categories: research political-economy
+title: 'Research Update: Economic Sanctions and Voter Behavior'
+date: 2015-08-14
+permalink: /posts/2012/08/blog-post-5/
+tags:
+  - cool posts
+  - category1
+  - category2
 ---
+
 
 In my ongoing research on economic sanctions and voter behavior in Iran, I've been analyzing how different types of sanctions affect political preferences and voting patterns. The preliminary results suggest some interesting patterns in how voters respond to economic pressures.
 
