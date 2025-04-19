@@ -18,10 +18,10 @@ main:
     url: /portfolio/
         
   - title: "Readings"
-    url: /Readings/
+    url: /readings/
 
   - title: "Learning"
-    url: /Learning/
+    url: /learning/
 
   - title: "Blog Posts"
     url: /year-archive/
