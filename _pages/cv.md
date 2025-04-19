@@ -9,7 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-Dowload full CV [here](https://k-hosseini.github.io/files/paper1.pdf)
+Download full CV:
+* [PDF version](https://k-hosseini.github.io/files/paper1.pdf)
+* [TeX source](https://k-hosseini.github.io/files/cv.tex)
 
 
 Education

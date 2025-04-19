@@ -1,0 +1,103 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage{xcolor}
+
+% Page setup
+\geometry{a4paper, margin=1in}
+\setmainfont{Times New Roman}
+
+% Custom colors
+\definecolor{sectioncolor}{RGB}{0, 51, 102}
+
+% Section formatting
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{sectioncolor}}
+  {}{0em}{}[\titlerule]
+
+% Custom commands
+\newcommand{\cvsection}[1]{\section*{#1}}
+\newcommand{\cvitem}[2]{\item[#1] #2}
+\newcommand{\cvsubitem}[1]{\item[] #1}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\huge\textbf{Kiarash Hosseini}}\\[0.5em]
+    {\large PhD Candidate in Economics}\\[0.5em]
+    Simon Fraser University\\
+    Burnaby, BC, Canada\\[1em]
+    \href{mailto:your.email@sfu.ca}{your.email@sfu.ca} $\cdot$ 
+    \href{https://github.com/k-hosseini}{GitHub} $\cdot$ 
+    \href{https://scholar.google.com/citations?user=YOUR_ID}{Google Scholar}
+\end{center}
+
+\cvsection{Education}
+\begin{itemize}[leftmargin=*]
+    \cvitem{2020--2025 (expected)}{PhD in Economics, Simon Fraser University}
+    \cvitem{2016--2018}{MSc in Economics, Sharif University of Technology}
+    \cvitem{2011--2015}{BSc in Industrial Engineering, Bu-Ali Sina University}
+\end{itemize}
+
+\cvsection{Research Interests}
+\begin{itemize}[leftmargin=*]
+    \item Political Economy
+    \item Labor Economics
+    \item Development Economics
+    \item Applied Microeconomics
+\end{itemize}
+
+\cvsection{Research Experience}
+\begin{itemize}[leftmargin=*]
+    \cvitem{2020--Present}{Research Assistant, Simon Fraser University}
+    \cvsubitem{$\bullet$ Working on economic sanctions and voter behavior in Iran}
+    \cvsubitem{$\bullet$ Analyzing immigration trajectories and economic success in Canada}
+    \cvsubitem{$\bullet$ Studying the impact of 3G Internet on female labor force participation}
+    
+    \cvitem{2016--2018}{Research Assistant, Sharif University of Technology}
+    \cvsubitem{$\bullet$ Assisted in data collection and analysis for various projects}
+    \cvsubitem{$\bullet$ Co-authored working papers and conference presentations}
+\end{itemize}
+
+\cvsection{Teaching Experience}
+\begin{itemize}[leftmargin=*]
+    \cvitem{2022--Present}{Teaching Assistant, Simon Fraser University}
+    \cvsubitem{$\bullet$ Intermediate Microeconomics}
+    \cvsubitem{$\bullet$ Econometrics}
+    \cvsubitem{$\bullet$ Development Economics}
+\end{itemize}
+
+\cvsection{Skills}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Programming:} R, Python, Stata, LaTeX
+    \item \textbf{Econometrics:} Causal inference, Panel data analysis, Machine learning
+    \item \textbf{Languages:} English (Fluent), Persian (Native)
+\end{itemize}
+
+\cvsection{Publications}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Working Papers}
+    \cvsubitem{$\bullet$ "The Impact of Economic Sanctions on Voter Behavior: Evidence from Iran" (with Co-authors)}
+    \cvsubitem{$\bullet$ "Digital Divide and Gender Gaps: Evidence from Iran's 3G Rollout" (with Co-authors)}
+\end{itemize}
+
+\cvsection{Conference Presentations}
+\begin{itemize}[leftmargin=*]
+    \cvitem{2023}{Canadian Economics Association Annual Conference}
+    \cvsubitem{$\bullet$ Presented research on economic sanctions and voter behavior}
+    
+    \cvitem{2022}{Western Economic Association International Conference}
+    \cvsubitem{$\bullet$ Presented work on immigration and economic success}
+\end{itemize}
+
+\end{document} 
