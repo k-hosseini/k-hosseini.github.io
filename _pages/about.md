@@ -21,8 +21,7 @@ Before my PhD, I worked as a data analyst on applied policy studies in Tehran. D
 Job Market Paper
 ======
 
-**[Immigrants' Pathways to Success: Study Permit vs Permanent Residency](/research/#job-market-paper)** (with Fernando Aragón)<br>
-[Slides](/files/Hosseini_Aragon_Immigrants_Pathways_Slides.pdf)
+**[Immigrants' Pathways to Success: Study Permit vs Permanent Residency](/research/#job-market-paper)** (with Fernando Aragón)
 
 Which immigrants a country admits, and how it helps them integrate, are central questions in immigration policy. Using the Longitudinal Immigration Database linked with annual tax files, we compare the long-run economic trajectories of immigrants who arrived on study permits and later became permanent residents with those of immigrants who arrived directly as permanent residents. Former students earn less than direct permanent residents during their first eight years after admission, but their incomes overtake those of direct permanent residents in later years.
 
