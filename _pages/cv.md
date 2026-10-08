@@ -26,7 +26,7 @@ Labour Economics, Immigration, Political Economy, Applied Econometrics
 Research
 ======
 
-* **Job market paper:** [Immigrants' Pathways to Success: Study Permit vs Permanent Residency](/research/#job-market-paper) (with Fernando Aragón)
+* **Job market paper:** [Immigrants' Pathways to Success: Study Permit vs Permanent Residency](/research/#job-market-paper)
 * [Closing the Gender Gap? The Employment Effects of 3G Internet in Iran](/research/#working-papers)
 * [Sanctions, Dissent, and the Political Equilibrium](/research/#working-papers) (with Samuel Bazzi and Pierre Mouganie)
 * [Inheritances and Labour Supply in Canada](/research/#policy-research), Statistics Canada internship project (2024–2025)

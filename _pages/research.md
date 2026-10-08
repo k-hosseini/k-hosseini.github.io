@@ -8,8 +8,7 @@ author_profile: true
 Job Market Paper
 ======
 
-**Immigrants' Pathways to Success: Study Permit vs Permanent Residency**<br>
-with Fernando Aragón
+**Immigrants' Pathways to Success: Study Permit vs Permanent Residency**
 
 The composition of admitted immigrants and the design of interventions aimed at reducing barriers to labour-market integration are central questions in immigration policy. This paper compares the long-term economic trajectories of immigrants who entered Canada through two major pathways: (1) international students who first arrived on study permits and later obtained permanent residency, and (2) immigrants who arrived directly as permanent residents. Using the Longitudinal Immigration Database linked with annual tax files, the analysis examines whether a preliminary period of study in the first pathway provides immigrants with credentials, networks, and local experience that facilitate economic assimilation and improve long-term labour-market outcomes. The results suggest that immigrants who transition from study permits to permanent residency have lower incomes than direct permanent residents during the first eight years after admission. However, their income trajectories surpass those of direct permanent residents in subsequent years.
 
