@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Kiarash Hosseini"
 title_separator          : "-"
 name                     : &name "Kiarash Hosseini"
-description              : &description "personal description"
+description              : &description "Kiarash Hosseini, PhD candidate in economics at Simon Fraser University. Applied microeconomics: immigration, labour, and political economy. On the 2026-2027 job market."
 url                      : https://k-hosseini.github.io/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "k-hosseini/k-hosseini.github.io"
@@ -25,7 +25,7 @@ author:
   avatar           : "Kiarash.jpg"
   name             : "Kiarash Hosseini"
   pronouns         : # example: "she/her"  
-  bio              : "PhD Candidate in Economics"
+  bio              : "PhD Candidate in Economics<br>On the 2026–27 Job Market"
   location         : "Burnaby, BC, Canada"
   employer         : "Simon Fraser University"
   uri              : # URL
@@ -33,7 +33,7 @@ author:
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.ca/citations?user=GJzfO0MAAAAJ&hl=fr"
+  googlescholar    : "https://scholar.google.ca/citations?user=GJzfO0MAAAAJ"
   impactstory      : # URL
   semantic         : # URL
   pubmed           : # URL
@@ -61,10 +61,11 @@ author:
   linkedin         : "kiarash-hoseiny-6b0747112"
   mastodon         : # URL
   medium           : # URL
+  substack         : # Full URL, e.g. "https://yourname.substack.com" (the sidebar link appears once this is set)
   pinterest        : # Username
   soundcloud       : # Username
   steam            : # Username
-  telegram         : "https://t.me/Khosseini1130"
+  telegram         : 
   tumblr           : # Username
   twitter          : # Username for X / Twitter
   vine             : # Username
@@ -117,7 +118,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true      # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -211,19 +212,7 @@ kramdown:
 
 
 # These settings control the types of collections used by the template
-collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
+collections: {}
 
 
 # These settings control how pages and collections are included in the site
@@ -246,41 +235,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 
 # Sass/SCSS

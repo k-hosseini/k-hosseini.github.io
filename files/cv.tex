@@ -1,103 +1,141 @@
-%!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
+% Academic CV of Kiarash Hosseini
+% Compile with: latexmk -pdf -jobname=Hosseini_CV cv.tex
+\documentclass[11pt,letterpaper]{article}
 
-\documentclass[11pt, a4paper]{article}
-
-% Packages
-\usepackage[utf8]{inputenc}
-\usepackage{geometry}
-\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{newpxtext}
+\usepackage[margin=1in]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
-\usepackage{fontspec}
 \usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
 
-% Page setup
-\geometry{a4paper, margin=1in}
-\setmainfont{Times New Roman}
+\definecolor{accent}{RGB}{0,51,102}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent}
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+\setlist{leftmargin=1.2em,itemsep=1pt,topsep=2pt}
 
-% Custom colors
-\definecolor{sectioncolor}{RGB}{0, 51, 102}
+\titleformat{\section}{\large\scshape\color{accent}}{}{0em}{}[\vspace{-0.6em}\rule{\linewidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{1.1em}{0.5em}
 
-% Section formatting
-\titleformat{\section}
-  {\normalfont\Large\bfseries\color{sectioncolor}}
-  {}{0em}{}[\titlerule]
-
-% Custom commands
-\newcommand{\cvsection}[1]{\section*{#1}}
-\newcommand{\cvitem}[2]{\item[#1] #2}
-\newcommand{\cvsubitem}[1]{\item[] #1}
+% \entry{left}{right date}
+\newcommand{\entry}[2]{\noindent\begin{tabularx}{\linewidth}{@{}X r@{}}#1 & #2\end{tabularx}\par}
+\newcommand{\paper}[1]{\textbf{#1}}
 
 \begin{document}
 
-% Header
 \begin{center}
-    {\huge\textbf{Kiarash Hosseini}}\\[0.5em]
-    {\large PhD Candidate in Economics}\\[0.5em]
-    Simon Fraser University\\
-    Burnaby, BC, Canada\\[1em]
-    \href{mailto:your.email@sfu.ca}{your.email@sfu.ca} $\cdot$ 
-    \href{https://github.com/k-hosseini}{GitHub} $\cdot$ 
-    \href{https://scholar.google.com/citations?user=YOUR_ID}{Google Scholar}
+  {\LARGE Kiarash Hosseini}\\[0.4em]
+  Department of Economics, Simon Fraser University\\
+  8888 University Drive, Burnaby, BC V5A 1S6, Canada\\[0.3em]
+  \href{mailto:kiarash_hosseini@sfu.ca}{kiarash\_hosseini@sfu.ca} \quad$\cdot$\quad
+  \href{https://k-hosseini.github.io}{k-hosseini.github.io} \quad$\cdot$\quad
+  Canadian Permanent Resident
 \end{center}
 
-\cvsection{Education}
-\begin{itemize}[leftmargin=*]
-    \cvitem{2020--2025 (expected)}{PhD in Economics, Simon Fraser University}
-    \cvitem{2016--2018}{MSc in Economics, Sharif University of Technology}
-    \cvitem{2011--2015}{BSc in Industrial Engineering, Bu-Ali Sina University}
+\section{Education}
+\entry{\textbf{Ph.D. in Economics}, Simon Fraser University}{2020 -- 2027 (expected)}
+\begin{itemize}
+  \item Committee: Fernando Arag\'on (Supervisor), Pierre Mouganie, Simon Woodcock
+  \item Additional graduate coursework: Machine Learning and Design and Analysis of Algorithms (SFU Computing Science); Computational Economics (UBC)
+\end{itemize}
+\entry{\textbf{M.Sc. in Economics}, Sharif University of Technology, Tehran}{2015 -- 2018}
+\entry{\textbf{B.Sc. in Industrial Engineering}, Bu-Ali Sina University, Hamedan}{2011 -- 2015}
+
+\section{Fields}
+Labour Economics, Immigration, Political Economy, Applied Econometrics
+
+\section{Job Market Paper}
+\paper{Immigrants' Pathways to Success: Study Permit vs Permanent Residency}\\ with Fernando Arag\'on\\[0.3em]
+Using the Longitudinal Immigration Database linked with annual tax files, we compare the long-run economic trajectories of immigrants who first arrived in Canada on study permits and later obtained permanent residency with those of immigrants admitted directly as permanent residents. Former international students earn less than direct permanent residents during the first eight years after admission, but their income trajectories surpass those of direct permanent residents in subsequent years.
+
+\section{Working Papers}
+\begin{itemize}
+  \item \paper{Closing the Gender Gap? The Employment Effects of 3G Internet in Iran}
+  \item \paper{Sanctions, Dissent, and the Political Equilibrium} (with Samuel Bazzi and Pierre Mouganie)
 \end{itemize}
 
-\cvsection{Research Interests}
-\begin{itemize}[leftmargin=*]
-    \item Political Economy
-    \item Labor Economics
-    \item Development Economics
-    \item Applied Microeconomics
+\section{Policy Research}
+\begin{itemize}
+  \item \paper{Inheritances and Labour Supply in Canada}, Statistics Canada internship project (2024--2025)
 \end{itemize}
 
-\cvsection{Research Experience}
-\begin{itemize}[leftmargin=*]
-    \cvitem{2020--Present}{Research Assistant, Simon Fraser University}
-    \cvsubitem{$\bullet$ Working on economic sanctions and voter behavior in Iran}
-    \cvsubitem{$\bullet$ Analyzing immigration trajectories and economic success in Canada}
-    \cvsubitem{$\bullet$ Studying the impact of 3G Internet on female labor force participation}
-    
-    \cvitem{2016--2018}{Research Assistant, Sharif University of Technology}
-    \cvsubitem{$\bullet$ Assisted in data collection and analysis for various projects}
-    \cvsubitem{$\bullet$ Co-authored working papers and conference presentations}
+\section{Presentations}
+\begin{description}[leftmargin=3.5em,labelwidth=3em,labelsep=0.5em,font=\normalfont,itemsep=0pt]
+  \item[2026] Canadian Economics Association Annual Meeting; CRDCN Conference
+  \item[2025] Canadian Economics Association Annual Meeting; CRDCN Conference; Statistics Canada Research Forum
+  \item[2024] Canadian Economics Association Annual Meeting
+  \item[2023] Canadian Economics Association Annual Meeting
+  \item[2022] SFU Economics Brown Bag Seminar
+  \item[2021] Canadian Economics Association Annual Meeting
+\end{description}
+
+\section{Research Experience}
+\entry{\textbf{Social Statistics and Economics Intern}, Statistics Canada, Vancouver}{Nov 2024 -- Mar 2025}
+\begin{itemize}
+  \item Designed and carried out a study of inheritance receipt and labour supply, linking the Survey of Financial Security to annual tax records; presented results to management and at the Statistics Canada Research Forum
+\end{itemize}
+\entry{\textbf{Deemed Employee}, Statistics Canada, via the CRDCN}{2023 -- present}
+\begin{itemize}
+  \item Confidential administrative microdata, including the Longitudinal Immigration Database, Census, PSIS, and tax records
+\end{itemize}
+\entry{\textbf{Research Assistant}, Department of Economics, Simon Fraser University}{2021 -- 2024}
+\begin{itemize}
+  \item Prepared the Panel Study of Income Dynamics and its confidential supplements for analysis
+\end{itemize}
+\entry{\textbf{Data Analyst and Policy Consultant}, Saman Toos Policy Co., Tehran}{2018 -- 2019}
+\begin{itemize}
+  \item Analyzed administrative and survey data for policy studies; designed a survey of 700 stock market traders and experts on herding behaviour
 \end{itemize}
 
-\cvsection{Teaching Experience}
-\begin{itemize}[leftmargin=*]
-    \cvitem{2022--Present}{Teaching Assistant, Simon Fraser University}
-    \cvsubitem{$\bullet$ Intermediate Microeconomics}
-    \cvsubitem{$\bullet$ Econometrics}
-    \cvsubitem{$\bullet$ Development Economics}
+\section{Teaching Experience}
+\entry{\textbf{Sessional Lecturer}, Simon Fraser University}{Spring 2026}
+\begin{itemize}
+  \item SDA 100: Social Data Analysis -- Data Visualization (designed course materials; average evaluation 4.3/5)
+\end{itemize}
+\entry{\textbf{Teaching Assistant}, Simon Fraser University}{2021 -- present}
+\begin{itemize}
+  \item Economics: ECON 102, 103, 105, 113, 201, 302, 331, 333 ($\times$2), 334, 383
+  \item Beedie School of Business: BUS 336 (Spring 2026)
+\end{itemize}
+\entry{\textbf{Teaching Assistant}, Sharif University of Technology}{2015 -- 2018}
+\begin{itemize}
+  \item Econometrics I ($\times$2), Macroeconomics, Economy of Iran ($\times$3), Principles of Economics ($\times$2)
+\end{itemize}
+\entry{\textbf{Teaching Assistant}, Bu-Ali Sina University}{2013 -- 2015}
+\begin{itemize}
+  \item Probability Theory, Statistics, Statistical Quality Control, Operations Research I
 \end{itemize}
 
-\cvsection{Skills}
-\begin{itemize}[leftmargin=*]
-    \item \textbf{Programming:} R, Python, Stata, LaTeX
-    \item \textbf{Econometrics:} Causal inference, Panel data analysis, Machine learning
-    \item \textbf{Languages:} English (Fluent), Persian (Native)
-\end{itemize}
+\section{Awards and Fellowships}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+Shiva and Elizabeth Nanda Graduate Fellowship in Economics, SFU & 2025 \\
+CRDCN Emerging Scholars Grant & 2024 \\
+SFU President's PhD Scholarship & 2023 \\
+James Dean Award for the Best Second-Year Paper, SFU Economics & 2023 \\
+Highest Teaching Evaluation among Economics Teaching Assistants, SFU & 2023 \\
+Lang Wong Memorial Endowment Scholarship, SFU & 2021 \\
+Richard G. Lipsey Award for the Best Comprehensive Exam Result, SFU & 2021 \\
+\end{tabularx}\\[0.3em]
+Also: Graduate Fellowship ($\times$4), Travel and Research Award ($\times$3), Productivity Partnership Travel Grant ($\times$2), Special Entrance Graduate Scholarship
 
-\cvsection{Publications}
-\begin{itemize}[leftmargin=*]
-    \item \textbf{Working Papers}
-    \cvsubitem{$\bullet$ "The Impact of Economic Sanctions on Voter Behavior: Evidence from Iran" (with Co-authors)}
-    \cvsubitem{$\bullet$ "Digital Divide and Gender Gaps: Evidence from Iran's 3G Rollout" (with Co-authors)}
-\end{itemize}
+\section{Service}
+\entry{Secretary, Economics Graduate Student Society, Simon Fraser University}{2022 -- 2024}
 
-\cvsection{Conference Presentations}
-\begin{itemize}[leftmargin=*]
-    \cvitem{2023}{Canadian Economics Association Annual Conference}
-    \cvsubitem{$\bullet$ Presented research on economic sanctions and voter behavior}
-    
-    \cvitem{2022}{Western Economic Association International Conference}
-    \cvsubitem{$\bullet$ Presented work on immigration and economic success}
-\end{itemize}
+\section{Skills}
+\textbf{Programming:} R, Python, Stata, SAS, SQL, Julia, MATLAB, \LaTeX, Git\\
+\textbf{Languages:} English (fluent), Persian (native)
 
-\end{document} 
+\section{References}
+\begin{tabularx}{\linewidth}{@{}X X X@{}}
+\textbf{Fernando Arag\'on} (Supervisor) & \textbf{Pierre Mouganie} & \textbf{Simon Woodcock} \\
+Department of Economics & Department of Economics & Department of Economics \\
+Simon Fraser University & Simon Fraser University & Simon Fraser University \\
+\end{tabularx}
+
+\vfill
+{\footnotesize Last updated: October 2026}
+
+\end{document}
